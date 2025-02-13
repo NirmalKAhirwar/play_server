@@ -1,0 +1,70 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar-link:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.1);
+}
+
+.navbar-link:active {
+    transform: scale(1);
+}
+
+.navbar-link:focus {
+    outline: none;
+}
+
+.navbar-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-item:hover:after {
+    background-color: #3498db;
+}
+
+.navbar-item:hover .navbar-link {
+    color: #3498db;
+}
+
+/* Optional: Adding a logo to the left side of the Navbar */
+.navbar-logo {
+    font-size: 24px;
+    color: #ecf0f1;
+    font-weight: bold;
+    text-transform: uppercase;
+}

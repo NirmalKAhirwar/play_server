@@ -1,0 +1,82 @@
+/* Homepage.css */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../assets/hero_section_image.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+    z-index: 2;
+    opacity: 0;
+    /* Initially hide */
+    transform: scale(0.8);
+    /* Initially shrink */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /* Smooth transition */
+}
+
+.hero-content.animate {
+    opacity: 1;
+    /* Fade in */
+    transform: scale(1);
+    /* Grow */
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-container {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff8c00;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff5722;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-button.secondary:hover {
+    background-color: white;
+    color: #ff5722;
+}
+
+.hero-image-container {
+    max-width: 50%;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
